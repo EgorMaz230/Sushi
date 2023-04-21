@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+  <div class="logogo">
+    <div class="header-logo">
+      <img class="susu" src="./img/susu22.PNG" alt="">
+    </div>
+   
+  <button  onclick="document.getElementById('id01').style.display='block'" class="reg" style="width:auto;">Зарегеструватися</button>
+</div>
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть Modal">&times;</span>
+    <form class="modal-content" action="../action_page.php">
+      <div class="container_1">
+        
+        <h1 class="H">Зарегеструватися</h1>
+        <p class="p">Please fill in this form to create an account.</p>
+        <hr>
+        
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder=" Ведіть Email" name="email" required>
+        <label for="psw"><b>Пароль</b></label>
+        <input type="password" placeholder=" Ведіть пароль" name="psw" required>
+        <label for="psw-repeat"><b>Повторіть пароль</b></label>
+        <input type="password" placeholder="Повторіть пароль" name="psw-repeat" required>
+        
+          <!-- <input type="checkbox" class="remember" checked="checked" name="remember"><label> Запам'ятати мене</label> -->
+          <div class="conf">
+        <p>Створюючи обліковий запис, ви погоджуєтесь з нашою  <a href="#" style="color:dodgerblue">Умовою та конфіденційністю</a>.</p>
+        <input type="checkbox" class="remember" checked="checked" name="remember">
+      </div>
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Відмінити</button>
+          <button type="submit" class="signupbtn">Вхід</button>
+        </div>
+       
+      </div>
+    </form>
+  </div>
+    <form action="../action_page.php">
+      <div class="row">
+        <h2 style="text-align:center; color:white;">Увійти за допомогою соціальних мереж або вручну</h2>
+        <div class="vl">
+          <span class="vl-innertext">або</span>
+        </div>
+        <div class="col">
+          <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+            </i> Увійти за допомогою Google
+          </a>
+          <a href="#" class="fb btn">
+            <i class="fa fa-facebook fa-fw"></i> Увійти за допомогою Facebook
+          </a>
+          <a href="#" class="twitter btn">
+            <i class="fa fa-twitter fa-fw"></i> Увійти за допомогою Twitter
+          </a>
+        </div>
+        <div class="col">
+          <div class="hide-md-lg">
+            <p>Або зайдіть у систему власноруч:</p>
+          </div>
+          <input type="text" name="username" placeholder="Ім'я користувача" required>
+          <input type="password" name="password" placeholder="Пароль" required>
+          <button type="button" class="button-go">
+            <a href="./header.html">Увійти</a>
+            </button>
+        </div>
+      </div>
+    </form>
+    <div class="bottom-container">
+        <div class="col-1">
+          <a href="#" style="color:white" class="btn">Забули пароль?</a>
+        </div>
+    </div>
+  </div>
+</body>
+<script src="https://kit.fontawesome.com/f3b67a7541.js" crossorigin="anonymous"></script>
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+</html>
+
+
+
