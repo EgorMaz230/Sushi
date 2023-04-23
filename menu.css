@@ -44,14 +44,14 @@
 }
 
 .number {
-  color: #000000;
+  color: #f0f0f0;
   text-decoration: none;
   font-weight: 700;
 }
 .phone-text {
   font-size: 14px;
   font-weight: 400;
-  color: #000000;
+  color: #eeeeee;
 }
 
 .phone-holder {
@@ -460,7 +460,7 @@ button {
   }
   .text-overlay p {
     position: absolute;
-    top: 41%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
